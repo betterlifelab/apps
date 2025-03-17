@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Simple Overlay Timer - Usage Instructions</title>
+    <title>Simple Overlay Timer - Detailed Usage Guide</title>
     <style>
       body {
         font-family: Arial, sans-serif;
         line-height: 1.6;
         margin: 0;
         padding: 0;
-        background: #f9f9f9;
+        background: #f7f7f7;
+        color: #333;
       }
       header {
         background: #007acc;
@@ -34,13 +35,14 @@
         border-radius: 4px;
       }
       .container {
-        max-width: 800px;
+        max-width: 900px;
         margin: 20px auto;
         background: #fff;
-        padding: 20px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
-      h2 {
+      h2,
+      h3 {
         color: #007acc;
         margin-top: 30px;
       }
@@ -60,12 +62,18 @@
         color: #777;
         margin: 20px 0;
       }
+      pre {
+        background: #f0f0f0;
+        padding: 10px;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
     </style>
   </head>
   <body>
     <header>
       <h1>Simple Overlay Timer</h1>
-      <p>Usage Instructions / 使用方法</p>
+      <p>Detailed Usage Guide / 詳細な使用方法ガイド</p>
     </header>
 
     <div class="language-toggle">
@@ -79,221 +87,262 @@
         <h2>Introduction</h2>
         <p>
           Simple Overlay Timer is a macOS application designed to provide an
-          always-on-top timer overlay. Whether you’re working, presenting, or
-          even gaming, this tool helps you manage your time efficiently—right on
-          top of any app, including full-screen modes.
+          always-on-top timer overlay that works seamlessly across all
+          applications, including full-screen modes. Whether you’re working,
+          presenting, or gaming, this tool keeps your time management front and
+          center.
+        </p>
+        <p>
+            If you have trouble using the app, feel free to reach out to us at
+            <a href="mailto:betterlifelab2025@gmail.com">betterlifelab2025@gmail.com</a>
         </p>
 
-        <h2>Installation</h2>
+        <h2>How to Use the App</h2>
+        <h3>1. Launching the Timer Panel</h3>
         <ol>
-          <li>Download the Simple Overlay Timer from the Mac App Store.</li>
           <li>
-            Install the application by dragging it into your Applications
-            folder.
+            <strong>Open the Timer Panel:</strong> Click the timer icon in the
+            menu bar, then click “Show Timer" to display the panel.
           </li>
           <li>
-            Launch the app. An icon will appear in your menu bar at the top of
-            the screen.
+            <strong>Display Modes:</strong> The app offers two UI modes:
+            <ul>
+              <li>
+                <strong>Simple Mode:</strong> A minimal interface that shows
+                just the time and a few controls, ideal for distraction-free
+                work.
+              </li>
+              <li>
+                <strong>Normal Mode:</strong> A full-featured interface with
+                Start, Pause, Reset, and mode-switch buttons for detailed
+                control.
+              </li>
+            </ul>
           </li>
         </ol>
 
-        <h2>Usage Instructions</h2>
-        <p>Follow these steps once the app is running:</p>
-        <ul>
+        <h3>2. Operating the Timer</h3>
+        <ol>
           <li>
-            <strong>Open Timer Panel:</strong> Click the menu bar icon to
-            display the timer panel.
+            <strong>Countdown Mode:</strong>
+            <ul>
+              <li>
+                Enter the desired countdown time (in seconds) into the input
+                field and press Enter to set the timer.
+              </li>
+              <li>
+                In simple mode, the timer will start automatically upon setting
+                the time. In normal mode, press the <em>Start</em> button to
+                begin the countdown.
+                In simple mode, click the timer to restart the countdown.
+              </li>
+              <li>
+                The timer will count down and, upon reaching zero, play the
+                selected sound.
+              </li>
+            </ul>
           </li>
           <li>
-            <strong>Mode Switching:</strong> Use the “Switch Mode” button to
-            toggle between Countdown and Stopwatch modes.
+            <strong>Stopwatch Mode:</strong>
+            <ul>
+              <li>Switch to Stopwatch mode using the “Switch Mode” button.</li>
+              In simple mode, the stopwatch will start automatically.
+              In normal mode, press the <em>Start</em> button to begin the stopwatch.
+              <li>
+                Press <em>Pause</em> to pause the stopwatch and <em>Reset</em> to
+                clear the elapsed time.
+              </li>
+            </ul>
           </li>
-          <li>
-            <strong>Countdown Mode:</strong> Enter your desired countdown time
-            (in seconds) into the input field and press Enter. The timer will
-            begin counting down.
-          </li>
-          <li>
-            <strong>Stopwatch Mode:</strong> Simply press Start to begin
-            recording elapsed time.
-          </li>
-          <li>
-            <strong>Drag and Reposition:</strong> The panel is draggable—click
-            and drag it to reposition anywhere on your screen, even over
-            full-screen applications.
-          </li>
-          <li>
-            <strong>Settings Auto-Save:</strong> All settings, including
-            countdown time, UI mode, sound choice, and panel position, are
-            automatically saved for future sessions.
-          </li>
-        </ul>
+        </ol>
 
-        <h2>Key Features</h2>
-        <ul>
+        <h3>3. Repositioning and Overlay Behavior</h3>
+        <ol>
           <li>
-            <strong>Always-on-Top Overlay:</strong> Remains visible over all
-            apps, including full-screen presentations and games.
+            <strong>Drag and Drop:</strong> Click anywhere on the panel and drag
+            it to your desired location. The panel can be moved over any app,
+            including full-screen applications.
           </li>
           <li>
-            <strong>Dual Modes:</strong> Easily switch between Countdown and
-            Stopwatch functionality.
+            <strong>Auto-Save:</strong> Once you release the panel, its position
+            is automatically saved and will be restored the next time you launch
+            the app.
+          </li>
+        </ol>
+
+        <h3>4. Resizing the Timer Panel</h3>
+        <ol>
+          <li>
+            <strong>Resize the Panel:</strong> Click the icon in the top left to resize the panel.
+          </li>
+
+        <h3>5. Changing Settings</h3>
+        <ol>
+          <li>
+            <strong>Open Preferences:</strong> Click “Preferences…” from the
+            menu bar dropdown. This opens the settings window.
+          </li>
+
+        <h3>5. Sending Feedback</h3>
+        <ol>
+          <li>
+            <strong>Feedback Function:</strong> If you experience any issues or
+            have suggestions, click “Feedback” in the menu bar.
           </li>
           <li>
-            <strong>Customizable Sound:</strong> Choose from a variety of
-            built-in sounds. The selected sound is previewed instantly upon
-            selection.
+            <strong>Submit Feedback:</strong> Enter your comments in the
+            provided text area and click “Send.” This will open your default
+            mail client with the feedback details pre-filled.
           </li>
-          <li>
-            <strong>User-Friendly Interface:</strong> Choose between a
-            minimalistic Simple Mode and a more detailed Normal Mode.
-          </li>
-          <li>
-            <strong>Automatic Settings Save:</strong> All your preferences are
-            preserved, so you’re ready to go every time you launch the app.
-          </li>
-        </ul>
+        </ol>
 
         <h2>Use Cases</h2>
         <ul>
           <li>
-            <strong>Focus Sessions:</strong> Perfect for Pomodoro-style work
-            sessions to keep you on track.
+            <strong>Focus Sessions:</strong> Use the countdown mode to apply
+            techniques like the Pomodoro Technique for improved productivity.
           </li>
           <li>
-            <strong>Presentations:</strong> Manage your speaking time during
-            full-screen presentations effortlessly.
+            <strong>Presentations:</strong> Keep track of your presentation time
+            by overlaying the timer even during full-screen slideshows.
           </li>
           <li>
-            <strong>Gaming:</strong> Track break times during long gaming
-            sessions without interrupting gameplay.
+            <strong>Gaming:</strong> Manage your break times during long gaming
+            sessions by keeping the timer visible on top of your game.
           </li>
           <li>
-            <strong>Everyday Tasks:</strong> Use it as a timer for cooking,
-            exercising, or any other activity where timing is essential.
+            <strong>Everyday Tasks:</strong> Use it as a kitchen timer, exercise
+            clock, or study timer without needing to switch windows.
           </li>
         </ul>
 
-        <h2>Feedback & Support</h2>
-        <p>
-          If you encounter any issues or have suggestions for improvements,
-          please use the built-in feedback feature in the app to contact us.
-          Your feedback helps us continually improve the experience.
-        </p>
 
         <h2>Conclusion</h2>
         <p>
-          Simple Overlay Timer is designed to help you manage your time
-          seamlessly, whether you're immersed in full-screen work or
-          multitasking across various applications. Enjoy a hassle-free timing
-          experience that keeps you focused and productive.
+          Simple Overlay Timer is built to help you stay aware of time without
+          interrupting your workflow. With its overlay capability, full-screen
+          support, and detailed customization options, you can focus on what
+          matters most while keeping time management in check.
         </p>
       </div>
 
       <!-- Japanese Content -->
-      <div id="content-ja" class="content">
-        <h2>はじめに</h2>
-        <p>
-          Simple Overlay
-          Timerは、常に画面上に表示されるタイマーオーバーレイを提供するmacOSアプリです。作業中、プレゼンテーション中、あるいはゲーム中でも、効率的な時間管理をサポートします。どんなアプリケーションの上にも自然に重ね合わせられるため、全画面表示でも安心してご利用いただけます。
-        </p>
-
-        <h2>インストール方法</h2>
-        <ol>
-          <li>Mac App StoreからSimple Overlay Timerをダウンロードします。</li>
-          <li>
-            ダウンロードしたアプリをアプリケーションフォルダにドラッグ＆ドロップしてインストールします。
-          </li>
-          <li>
-            アプリを起動すると、画面上部のメニューバーにアイコンが表示されます。
-          </li>
-        </ol>
-
-        <h2>使用方法</h2>
-        <p>アプリ起動後、以下の手順に従ってください：</p>
+      <!-- Japanese Content -->
+<div id="content-ja" class="content">
+    <h2>はじめに</h2>
+    <p>
+      Simple Overlay Timerは、macOS向けに設計された常に最前面に表示されるタイマーオーバーレイアプリです。全てのアプリケーション、さらにはフルスクリーンモードでもシームレスに動作します。作業中、プレゼンテーション中、またはゲーム中でも、時間管理を常に手元で確認できます。
+    </p>
+    <p>
+      ご利用に際してご不明点がございましたら、<a href="mailto:betterlifelab2025@gmail.com">betterlifelab2025@gmail.com</a>までお気軽にご連絡ください。
+    </p>
+  
+    <h2>アプリの使い方</h2>
+    <h3>1. タイマーパネルの起動</h3>
+    <ol>
+      <li>
+        <strong>タイマーパネルを開く:</strong> メニューバーのタイマーアイコンをクリックし、「Show Timer」を選択するとパネルが表示されます。
+      </li>
+      <li>
+        <strong>表示モード:</strong> このアプリは2種類のUIモードを提供します。
         <ul>
           <li>
-            <strong>タイマーパネルを開く:</strong>
-            メニューバーのアイコンをクリックしてタイマーパネルを表示します。
+            <strong>シンプルモード:</strong> 必要最小限の情報とコントロールのみを表示し、集中作業に最適です。
           </li>
           <li>
-            <strong>モード切替:</strong> 「Switch
-            Mode」ボタンをクリックして、カウントダウンモードとストップウォッチモードを切り替えます。
-          </li>
-          <li>
-            <strong>カウントダウンモード:</strong>
-            入力フィールドに希望の秒数を入力し、Enterキーを押すとカウントダウンが開始されます。
-          </li>
-          <li>
-            <strong>ストップウォッチモード:</strong>
-            単にStartボタンを押すだけで、経過時間の計測が始まります。
-          </li>
-          <li>
-            <strong>パネルの移動:</strong>
-            パネルはドラッグ可能で、自由に配置変更が可能。フルスクリーンアプリ上でも動作します。
-          </li>
-          <li>
-            <strong>設定の自動保存:</strong>
-            カウントダウン時間、UIモード、サウンド選択、パネル位置などの設定は自動的に保存され、次回起動時に復元されます。
+            <strong>ノーマルモード:</strong> 「Start」「Pause」「Reset」「Switch Mode」など、詳細な操作が可能なフル機能モードです。
           </li>
         </ul>
-
-        <h2>主な特徴</h2>
+      </li>
+    </ol>
+  
+    <h3>2. タイマーの操作</h3>
+    <ol>
+      <li>
+        <strong>カウントダウンモード:</strong>
         <ul>
           <li>
-            <strong>オーバーレイ表示:</strong>
-            他のすべてのアプリケーションや全画面表示の上に常に表示されます。
+            希望する秒数を入力フィールドに入力し、Enterキーを押してタイマーを設定します。
           </li>
           <li>
-            <strong>デュアルモード:</strong>
-            カウントダウンとストップウォッチの機能を簡単に切り替えられます。
+            シンプルモードでは、時間を設定すると自動的にカウントダウンが開始されます。ノーマルモードの場合は、<em>Start</em>ボタンを押してカウントダウンを開始してください。また、シンプルモードではタイマーをクリックすることでカウントダウンを再スタートできます。
           </li>
           <li>
-            <strong>カスタマイズ可能なサウンド:</strong>
-            内蔵サウンドから好みのものを選択可能。選択時にはプレビュー再生されます。
-          </li>
-          <li>
-            <strong>使いやすいUI:</strong>
-            シンプルモードとノーマルモードから用途に合わせて選択できます。
-          </li>
-          <li>
-            <strong>自動保存機能:</strong>
-            設定は全て自動で保存され、次回の起動時に前回の状態で利用できます。
+            タイマーは設定した時間からカウントダウンし、0に達すると選択されたサウンドが再生されます。
           </li>
         </ul>
-
-        <h2>ユースケース</h2>
+      </li>
+      <li>
+        <strong>ストップウォッチモード:</strong>
         <ul>
           <li>
-            <strong>集中作業:</strong>
-            Pomodoroテクニックなどで、作業中の時間管理をしっかりサポートします。
+            「Switch Mode」ボタンでストップウォッチモードに切り替えます。
           </li>
           <li>
-            <strong>プレゼンテーション:</strong>
-            フルスクリーンのスライドや会議中でも、残り時間を常に把握できます。
+            シンプルモードでは、切り替えと同時に自動的に計測が開始されます。ノーマルモードでは、<em>Start</em>ボタンを押してストップウォッチを開始してください。
           </li>
           <li>
-            <strong>ゲーム中の休憩:</strong>
-            長時間のゲームプレイ中に、適切な休憩タイミングを管理できます。
-          </li>
-          <li>
-            <strong>日常のタイミング管理:</strong>
-            料理、運動、ストレッチなど、あらゆるシーンで活用可能です。
+            経過時間の計測中は、<em>Pause</em>で一時停止し、<em>Reset</em>で計測結果をリセットできます。
           </li>
         </ul>
-
-        <h2>フィードバックとサポート</h2>
-        <p>
-          不具合や改善のご意見がございましたら、アプリ内のフィードバック機能からお気軽にご連絡ください。皆様の声をもとに、今後も定期的にアップデートを行ってまいります。
-        </p>
-
-        <h2>まとめ</h2>
-        <p>
-          Simple Overlay
-          Timerは、どんなアプリケーションの上でも自然に表示されるオーバーレイタイマーです。フルスクリーン環境でも利用可能なため、集中作業、プレゼン、ゲーム中の休憩管理など、様々なシーンで大活躍します。シンプルでありながら強力なこのアプリで、あなたの時間管理をよりスマートに実現しましょう。
-        </p>
-      </div>
-    </div>
+      </li>
+    </ol>
+  
+    <h3>3. パネルの移動とオーバーレイ表示</h3>
+    <ol>
+      <li>
+        <strong>ドラッグ＆ドロップ:</strong> パネルの任意の場所をクリックし、目的の位置へドラッグしてください。パネルは全てのアプリケーション上（フルスクリーンも含む）で移動可能です。
+      </li>
+      <li>
+        <strong>自動保存:</strong> パネルを移動してマウスボタンを離すと、新しい位置が自動的に保存され、次回起動時にその位置が復元されます。
+      </li>
+    </ol>
+  
+    <h3>4. タイマーパネルのサイズ変更</h3>
+    <ol>
+      <li>
+        <strong>サイズ変更:</strong> パネルの左上にあるアイコンをクリックすると、サイズ変更モードに入ります。カーソルが変化したら、クリック＆ドラッグでお好みのサイズに調整してください。
+      </li>
+    </ol>
+  
+    <h3>5. 設定の変更</h3>
+    <ol>
+      <li>
+        <strong>Preferencesを開く:</strong> メニューバーのドロップダウンから「Preferences...」を選択すると、設定ウィンドウが開きます。
+      </li>
+    </ol>
+  
+    <h3>6. フィードバックの送信</h3>
+    <ol>
+      <li>
+        <strong>フィードバック機能:</strong> もし不具合や改善のご提案がございましたら、メニューバーの「Feedback」をクリックしてください。
+      </li>
+      <li>
+        <strong>フィードバックの送信:</strong> 表示されたテキストエリアにコメントを入力し、「Send」ボタンをクリックすると、デフォルトのメールクライアントが起動し、フィードバック内容が自動で入力されます。
+      </li>
+    </ol>
+  
+    <h2>使用シーン</h2>
+    <ul>
+      <li>
+        <strong>集中作業:</strong> Pomodoroテクニックなどを用いて、カウントダウンモードで作業時間を管理し、集中力を向上させます。
+      </li>
+      <li>
+        <strong>プレゼンテーション:</strong> 全画面表示中のスライドや会議でも、タイマーをオーバーレイ表示することで、発表時間を正確に把握できます。
+      </li>
+      <li>
+        <strong>ゲーム中の休憩:</strong> フルスクリーンのゲームプレイ中でも、休憩タイミングを見逃さず、健康管理に役立ちます。
+      </li>
+      <li>
+        <strong>日常のタスク:</strong> 料理、運動、学習など、さまざまなシーンでタイマーを利用して効率的に時間管理が行えます。
+      </li>
+    </ul>
+  
+    <h2>まとめ</h2>
+    <p>
+      Simple Overlay Timerは、作業の妨げになることなく、常に画面上にタイマーを表示し続けることで、時間管理をサポートします。オーバーレイ機能やフルスクリーン対応、詳細なカスタマイズオプションにより、あなたが最も集中すべき作業に専念できる環境を提供します。
+    </p>
+  </div>
 
     <footer>
       <p>© 2025 BetterLife Lab. All rights reserved.</p>
