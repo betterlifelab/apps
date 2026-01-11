@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocabClip - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 14px;
+            margin: 0 auto 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+        }
+        .lang-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+        .lang-btn {
+            padding: 6px 16px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 16px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .lang-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        h2 {
+            font-size: 18px;
+            margin: 28px 0 12px;
+            color: #667eea;
+        }
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 12px;
+            color: #555;
+        }
+        ul {
+            margin: 12px 0;
+            padding-left: 24px;
+            color: #555;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .highlight {
+            background: #f0f4ff;
+            padding: 16px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            margin: 16px 0;
+        }
+        .date {
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid #eee;
+        }
+        footer {
+            text-align: center;
+            margin-top: 24px;
+            color: #999;
+            font-size: 12px;
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <img src="support_icon.png" alt="VocabClip" class="logo">
+                <h1>VocabClip</h1>
+                <p class="subtitle" id="subtitle-en">Privacy Policy</p>
+                <p class="subtitle" id="subtitle-ja" style="display:none;">プライバシーポリシー</p>
+            </div>
+            
+            <div class="lang-toggle">
+                <button class="lang-btn active" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" onclick="switchLang('ja')">日本語</button>
+            </div>
+
+            <!-- English Content -->
+            <div id="content-en" class="content active">
+                <div class="highlight">
+                    <strong>TL;DR:</strong> VocabClip does not collect, store, or transmit any of your personal data to external servers. All processing happens locally on your device.
+                </div>
+
+                <h2>Data Collection</h2>
+                <p>VocabClip does not collect any personal information. The app operates entirely on your device without requiring user accounts or registration.</p>
+
+                <h2>Local Data Storage</h2>
+                <p>The following data is stored locally on your device:</p>
+                <ul>
+                    <li>Words and phrases you save to your vocabulary list</li>
+                    <li>Your learning progress and review schedules</li>
+                    <li>App preferences and settings</li>
+                </ul>
+                <p>This data is stored using Apple's secure on-device storage and is not accessible to us or any third parties.</p>
+
+                <h2>iCloud Sync</h2>
+                <p>If you enable iCloud, your vocabulary data will be synced across your Apple devices using Apple's iCloud service. This data is encrypted and managed by Apple according to their privacy policies. We do not have access to this data.</p>
+
+                <h2>Third-Party Services</h2>
+                <p><strong>DeepL API (Optional):</strong> When a word is not found in the built-in dictionary, the app may use DeepL's translation service. In this case, only the word or phrase being translated is sent to DeepL's servers. No other personal information is transmitted. You can review DeepL's privacy policy at <a href="https://www.deepl.com/privacy" target="_blank">deepl.com/privacy</a>.</p>
+
+                <h2>Analytics</h2>
+                <p>VocabClip does not use any analytics or tracking services. We do not monitor your usage patterns or behavior.</p>
+
+                <h2>Changes to This Policy</h2>
+                <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+
+                <h2>Contact</h2>
+                <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:betterlifelab2025@gmail.com">betterlifelab2025@gmail.com</a>.</p>
+
+                <div class="date">
+                    Last updated: January 2024
+                </div>
+            </div>
+
+            <!-- Japanese Content -->
+            <div id="content-ja" class="content">
+                <div class="highlight">
+                    <strong>概要：</strong> VocabClipは個人データを収集、保存、外部サーバーへ送信することはありません。すべての処理はお使いのデバイス上でローカルに行われます。
+                </div>
+
+                <h2>データ収集について</h2>
+                <p>VocabClipは個人情報を一切収集しません。アプリはユーザーアカウントや登録を必要とせず、完全にお使いのデバイス上で動作します。</p>
+
+                <h2>ローカルデータの保存</h2>
+                <p>以下のデータはお使いのデバイスにローカルに保存されます：</p>
+                <ul>
+                    <li>単語帳に保存した単語やフレーズ</li>
+                    <li>学習の進捗状況と復習スケジュール</li>
+                    <li>アプリの設定</li>
+                </ul>
+                <p>これらのデータはAppleの安全なオンデバイスストレージを使用して保存され、私たちや第三者がアクセスすることはできません。</p>
+
+                <h2>iCloud同期</h2>
+                <p>iCloudを有効にした場合、単語帳データはAppleのiCloudサービスを通じてお使いのAppleデバイス間で同期されます。このデータは暗号化され、Appleのプライバシーポリシーに従って管理されます。私たちはこのデータにアクセスすることはできません。</p>
+
+                <h2>サードパーティサービス</h2>
+                <p><strong>DeepL API（オプション）：</strong> 内蔵辞書に単語が見つからない場合、アプリはDeepLの翻訳サービスを使用することがあります。この場合、翻訳対象の単語やフレーズのみがDeepLのサーバーに送信されます。その他の個人情報は送信されません。DeepLのプライバシーポリシーは <a href="https://www.deepl.com/privacy" target="_blank">deepl.com/privacy</a> でご確認いただけます。</p>
+
+                <h2>アナリティクス</h2>
+                <p>VocabClipはアナリティクスやトラッキングサービスを使用していません。お客様の利用パターンや行動を監視することはありません。</p>
+
+                <h2>お子様のプライバシー</h2>
+                <p>VocabClipはお子様から意図的に情報を収集することはありません。アプリはあらゆる年齢のユーザーにとって安全に設計されています。</p>
+
+                <h2>ポリシーの変更</h2>
+                <p>このプライバシーポリシーは随時更新される場合があります。変更があった場合は、このページに更新日とともに掲載されます。</p>
+
+                <h2>お問い合わせ</h2>
+                <p>このプライバシーポリシーについてご質問がある場合は、<a href="mailto:betterlifelab2025@gmail.com">betterlifelab2025@gmail.com</a> までお問い合わせください。</p>
+
+                <div class="date">
+                    最終更新日：2024年1月
+                </div>
+            </div>
+
+            <footer>
+                <a href="support.html">Support</a> | © 2024 VocabClip
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            document.getElementById('subtitle-en').style.display = lang === 'en' ? 'block' : 'none';
+            document.getElementById('subtitle-ja').style.display = lang === 'ja' ? 'block' : 'none';
+            
+            document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+            document.getElementById('content-' + lang).classList.add('active');
+        }
+        
+        if (navigator.language.startsWith('ja')) {
+            switchLang('ja');
+            document.querySelectorAll('.lang-btn')[0].classList.remove('active');
+            document.querySelectorAll('.lang-btn')[1].classList.add('active');
+        }
+    </script>
+</body>
+</html>

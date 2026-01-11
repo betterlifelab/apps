@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocabClip - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            margin: 0 auto 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+        }
+        .lang-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 32px;
+        }
+        .lang-btn {
+            padding: 8px 20px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .lang-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        .lang-btn:hover {
+            transform: translateY(-2px);
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        h2 {
+            font-size: 20px;
+            margin: 32px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #eee;
+        }
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        .step {
+            display: flex;
+            gap: 16px;
+            margin: 16px 0;
+            padding: 16px;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+        .step-number {
+            width: 32px;
+            height: 32px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .step-content h3 {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        .step-content p {
+            color: #666;
+            font-size: 14px;
+        }
+        .faq-item {
+            margin: 16px 0;
+            padding: 16px;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+        .faq-q {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .faq-a {
+            color: #666;
+            font-size: 14px;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 32px;
+            border-top: 2px solid #eee;
+        }
+        .contact a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 32px;
+            color: #999;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <img src="support_icon.png" alt="VocabClip" class="logo">
+                <h1>VocabClip</h1>
+                <p class="subtitle" id="subtitle-en">Support & How to Use</p>
+                <p class="subtitle" id="subtitle-ja" style="display:none;">サポート・使い方</p>
+            </div>
+            
+            <div class="lang-toggle">
+                <button class="lang-btn active" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" onclick="switchLang('ja')">日本語</button>
+            </div>
+
+            <!-- English Content -->
+            <div id="content-en" class="content active">
+                <h2>How to Use</h2>
+                
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Enable the Extension</h3>
+                        <p>Open Safari Settings → Extensions → Enable VocabClip</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Select a Word</h3>
+                        <p>While browsing any webpage, select an English word or phrase you want to learn.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>View Translation</h3>
+                        <p>A popup will appear showing the translation. If there are multiple meanings, you can choose the one that fits the context.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Save to Your Vocabulary</h3>
+                        <p>Tap "Save" to add the word to your personal vocabulary list for later review.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Review with Flashcards</h3>
+                        <p>Open the VocabClip app to study your saved words using the spaced repetition flashcard system.</p>
+                    </div>
+                </div>
+
+                <h2>FAQ</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-q">Q: Does it work offline?</div>
+                    <div class="faq-a">A: Yes! The built-in dictionary works completely offline. Only when a word is not found in the dictionary, DeepL translation (requires internet) will be used as a fallback.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-q">Q: Is there a daily limit?</div>
+                    <div class="faq-a">A: Dictionary lookups are unlimited. DeepL translations are limited to 20 per day with the free tier. You can enter your own DeepL API key for unlimited translations.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-q">Q: How do I sync between devices?</div>
+                    <div class="faq-a">A: Your vocabulary syncs automatically via iCloud. Just make sure you're signed in to the same iCloud account on all devices.</div>
+                </div>
+
+                <div class="contact">
+                    <p>Need help? Contact us at:<br>
+                    <a href="mailto:support@example.com">support@example.com</a></p>
+                </div>
+            </div>
+
+            <!-- Japanese Content -->
+            <div id="content-ja" class="content">
+                <h2>使い方</h2>
+                
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>拡張機能を有効化</h3>
+                        <p>Safari設定 → 拡張機能 → VocabClipを有効にする</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>単語を選択</h3>
+                        <p>ウェブページを閲覧中に、覚えたい英単語またはフレーズを選択します。</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>翻訳を確認</h3>
+                        <p>ポップアップで日本語訳が表示されます。複数の意味がある場合は、文脈に合ったものを選べます。</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>単語帳に保存</h3>
+                        <p>「保存」ボタンをタップして、あなただけの単語帳に追加します。</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>フラッシュカードで復習</h3>
+                        <p>VocabClipアプリを開いて、間隔反復システムで保存した単語を効率的に復習しましょう。</p>
+                    </div>
+                </div>
+
+                <h2>よくある質問</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-q">Q: オフラインでも使えますか？</div>
+                    <div class="faq-a">A: はい！内蔵辞書は完全にオフラインで動作します。辞書に単語がない場合のみ、DeepL翻訳（インターネット接続が必要）が使用されます。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-q">Q: 使用回数の制限はありますか？</div>
+                    <div class="faq-a">A: 辞書検索は無制限です。DeepL翻訳は無料版で1日20回までです。ご自身のDeepL APIキーを入力すると無制限で使用できます。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-q">Q: デバイス間で同期するには？</div>
+                    <div class="faq-a">A: 単語帳はiCloud経由で自動的に同期されます。すべてのデバイスで同じiCloudアカウントにサインインしていることを確認してください。</div>
+                </div>
+
+                <div class="contact">
+                    <p>お問い合わせ:<br>
+                    <a href="mailto:support@example.com">support@example.com</a></p>
+                </div>
+            </div>
+
+            <footer>
+                © 2024 VocabClip. All rights reserved.
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // Update buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Update subtitle
+            document.getElementById('subtitle-en').style.display = lang === 'en' ? 'block' : 'none';
+            document.getElementById('subtitle-ja').style.display = lang === 'ja' ? 'block' : 'none';
+            
+            // Update content
+            document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+            document.getElementById('content-' + lang).classList.add('active');
+        }
+        
+        // Auto-detect language
+        if (navigator.language.startsWith('ja')) {
+            switchLang('ja');
+            document.querySelectorAll('.lang-btn')[0].classList.remove('active');
+            document.querySelectorAll('.lang-btn')[1].classList.add('active');
+        }
+    </script>
+</body>
+</html>
